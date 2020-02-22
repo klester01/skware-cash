@@ -3,10 +3,10 @@
 //   given a list of transactions, will generate an HTML
 //   string representing the transactions
 //*******************************************************
-function renderTransactions(transactions) {
+function renderTransactions(transaction) {
 	var finalHTML = '<div class="buffer">TRANSACTIONS</div>';
 
-	var transactionsHTML = transactions.map(function () {
+	var transactionsHTML = transaction.map(function () {
 		var transactionHTML = `
 		<div class="transaction">
 			<div class="name">${transaction.name}</div>
